@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report_Road">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/CountryT"
+                android:layout_width="62dp"
+                android:layout_height="3dp"
+                android:textColor="#00FFFFFF" />
+
+            <ProgressBar
+                android:id="@+id/upload_progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/urlt"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="#00000000"
+                android:textSize="1sp" />
+
+            <TextView
+                android:id="@+id/RPD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REPORT ROAD DAMAGES"
+                android:textColor="#552110"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.091" />
+
+            <TextView
+                android:id="@+id/tvla"
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:text="TextView"
+                android:textColor="#00FFFFFF"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose subject for submit report"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+
+            <TextView
+                android:id="@+id/tvlo"
+                android:layout_width="38dp"
+                android:layout_height="3dp"
+                android:text="TextView"
+                android:textColor="#00FFFCFC"
+                tools:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/spinner_subjects"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report_the_damage_condition_of_the_road_select_one" />
+
+            <RadioGroup
+                android:id="@+id/rg_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_b_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Normal_Operation" />
+
+                <RadioButton
+                    android:id="@+id/rb_b_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Minor_damages" />
+
+                <RadioButton
+                    android:id="@+id/rb_b_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Partial_Closure" />
+
+                <RadioButton
+                    android:id="@+id/rb_b_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Full_Closure" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/what_hazard_condition_caused_the_damage_select_all_that_apply" />
+
+
+            <RadioButton
+                android:id="@+id/rb_a_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Heavy_Rainfall" />
+
+            <RadioButton
+                android:id="@+id/rb_a_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Landslide" />
+
+            <RadioButton
+                android:id="@+id/rb_a_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Flooding_and_Inundation" />
+
+            <RadioButton
+                android:id="@+id/rb_a_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Ground_Failure" />
+
+            <RadioButton
+                android:id="@+id/rb_a_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Accident" />
+
+            <RadioButton
+                android:id="@+id/rb_a_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Blockage" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/are_alternate_routes_available_for_use_in_the_area_select_one" />
+
+            <RadioGroup
+                android:id="@+id/rg_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_e_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_e_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/No" />
+
+                <RadioButton
+                    android:id="@+id/rb_e_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Do_not_Know" />
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/button_gg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHOOSE IMAGE"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAPTURE IMAGE" />
+
+            <ImageView
+                android:id="@+id/FireBaseImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+            <Button
+                android:id="@+id/UploadB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD IMAGE" />
+
+            <Button
+                android:id="@+id/btn_submit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

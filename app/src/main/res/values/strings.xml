@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Peoject_CRISTA</string>
+
+    <string name="excellent">Excellent</string>
+    <string name="very_good">Very Good</string>
+    <string name="good">Good</string>
+    <string name="poor">Poor</string>
+
+    <string name="Normal_Operation">Normal Operation</string>
+
+    <string name="Minor_damages">Minor damages</string>
+    <string name="Partial_Closure">Partial Closure</string>
+    <string name="Full_Closure">Full Closure</string>
+
+    <string name="Heavy_Rainfall">Heavy Rainfall</string>
+    <string name="Landslide">Landslide</string>
+    <string name="Flooding_and_Inundation">Flooding/Inundation</string>
+    <string name="Ground_Failure">Ground Failure</string>
+    <string name="Accident">Accident</string>
+    <string name="Blockage">Blockage</string>
+
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Do_not_Know">Don’t Know</string>
+
+    <string name="Electric_Lines">Electric Lines</string>
+    <string name="Electric_Poles">Electric Poles</string>
+    <string name="Transformers">Transformers</string>
+    <string name="Substation">Substation</string>
+
+    <string name="Complete_Power_Outage">Complete Power Outage</string>
+    <string name="Irregular_Power_Frequent_outage">Irregular Power (Frequent outage)</string>
+    <string name="Low_High_Voltage">Low/High Voltage</string>
+    <string name="Short_circuiting">Short circuiting</string>
+
+
+    <string name="Heavy_Winds">Heavy Winds</string>
+    <string name="Flooding">Flooding</string>
+    <string name="login">Login</string>
+    <string name="crista">CRISTA</string>
+    <string name="report_damaged_power_infrastructure_select_all_that_apply">Report damaged power Infrastructure (select all that apply)?</string>
+    <string name="condition_of_the_electric_supply_select_one">condition of the electric supply (select one).</string>
+    <string name="what_hazard_condition_caused_the_damage">What hazard condition caused the damage</string>
+    <string name="availability_of_alternative_electric_supply_in_the_area">Availability of alternative electric supply in the area</string>
+    <string name="report_the_damage_condition_of_the_road_select_one">Report the damage condition of the road (select one).</string>
+    <string name="what_hazard_condition_caused_the_damage_select_all_that_apply">What hazard condition caused the damage (select all that apply).</string>
+    <string name="are_alternate_routes_available_for_use_in_the_area_select_one">Are alternate routes available for use in the area (select one)?</string>
+
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "32884292927",
+    "firebase_url": "https://crista-ff00e-default-rtdb.firebaseio.com",
+    "project_id": "crista-ff00e",
+    "storage_bucket": "crista-ff00e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32884292927:android:ef634e366e5e325d82a78a",
+        "android_client_info": {
+          "package_name": "com.example.peoject_crista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32884292927-dv8ck39a2m2h6tliapte460mspkafjuk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peoject_crista",
+            "certificate_hash": "ae66915b0bdb126c37300326f1832bc486576bb5"
+          }
+        },
+        {
+          "client_id": "32884292927-svk0bol3s9vk9rq61f4t2m6urvsb1hpp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDySlDT22ChbSQSslKyaL4Mrq-8N_ND9uc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32884292927-svk0bol3s9vk9rq61f4t2m6urvsb1hpp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

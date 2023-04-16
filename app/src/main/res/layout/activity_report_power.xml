@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report_Power">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                android:id="@+id/upload_progress_bar2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvlo2"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:text="TextView"
+                android:textColor="#00FFFCFC"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tvla2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:text="TextView"
+                android:textColor="#00FFFFFF"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/countryT1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:textColor="#00FFFFFF" />
+
+            <TextView
+                android:id="@+id/urlt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="#00000000"
+                android:textSize="1sp" />
+
+            <TextView
+                android:id="@+id/RPD2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REPORT POWER NETWORK DAMAGES"
+                android:textColor="#F1DA0E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose subject for submit report"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_subjects"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report_damaged_power_infrastructure_select_all_that_apply" />
+
+
+            <RadioButton
+                android:id="@+id/ra_a_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Electric_Lines" />
+
+            <RadioButton
+                android:id="@+id/ra_a_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Electric_Poles" />
+
+            <RadioButton
+                android:id="@+id/ra_a_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Transformers" />
+
+            <RadioButton
+                android:id="@+id/ra_a_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Substation" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/condition_of_the_electric_supply_select_one" />
+
+            <RadioGroup
+                android:id="@+id/ra_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ra_b_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Normal_Operation" />
+
+                <RadioButton
+                    android:id="@+id/ra_b_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Complete_Power_Outage" />
+
+                <RadioButton
+                    android:id="@+id/ra_b_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Irregular_Power_Frequent_outage" />
+
+                <RadioButton
+                    android:id="@+id/ra_b_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Low_High_Voltage" />
+
+                <RadioButton
+                    android:id="@+id/ra_b_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Short_circuiting" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/what_hazard_condition_caused_the_damage" />
+
+            <RadioGroup
+                android:id="@+id/ra_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ra_c_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Heavy_Rainfall" />
+
+                <RadioButton
+                    android:id="@+id/ra_c_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Heavy_Winds" />
+
+                <RadioButton
+                    android:id="@+id/ra_c_g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Landslide" />
+
+                <RadioButton
+                    android:id="@+id/ra_c_p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Flooding" />
+
+                <RadioButton
+                    android:id="@+id/ra_c_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Ground_Failure" />
+
+                <RadioButton
+                    android:id="@+id/rb_c_j"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Accident" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/availability_of_alternative_electric_supply_in_the_area" />
+
+            <RadioGroup
+                android:id="@+id/ra_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/ra_e_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Yes" />
+
+                <RadioButton
+                    android:id="@+id/ra_e_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/No" />
+
+                <RadioButton
+                    android:id="@+id/ra_e_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Do_not_Know" />
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/button_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHOOSE IMAGE"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button_c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAPTURE IMAGE" />
+
+            <ImageView
+                android:id="@+id/fireBaseImage1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+            <Button
+                android:id="@+id/uploadB1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPLOAD IMAGE" />
+
+            <Button
+                android:id="@+id/btn_submit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
